@@ -7,11 +7,9 @@ export class Sorter {
         
         for (let i = 0; i < length; i++) {
             for (let j = 0; j < length - 1; j++){
-                const left = this.collection[j];
-                const right = this.collection[j+1];
-                if(left > right){
-                    this.collection[j] = right;
-                    this.collection[j+1] = left;
+                
+                if(this.collection.compare(j, j+1)){
+                    this.collection.swap(j, j+1);
                 }
             }
         }

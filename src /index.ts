@@ -1,3 +1,12 @@
+import {Sorter} from './sorter';
+import {NumbersCollection} from './numberscollection';
+
+const numColl = new NumbersCollection([10, 28, 3, -5, 0, -8]);
+const sorter = new Sorter(numColl);
+sorter.sort;
+console.log(numColl.data);
+console.log(numColl.length);
+
 //FOR NUMBERS ONLY
 // class Sorter { 
 //     constructor(public collection: number[]){}

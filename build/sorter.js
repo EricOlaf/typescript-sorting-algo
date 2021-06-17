@@ -9,11 +9,8 @@ var Sorter = /** @class */ (function () {
         var length = this.collection.length;
         for (var i = 0; i < length; i++) {
             for (var j = 0; j < length - 1; j++) {
-                var left = this.collection[j];
-                var right = this.collection[j + 1];
-                if (left > right) {
-                    this.collection[j] = right;
-                    this.collection[j + 1] = left;
+                if (this.collection.compare(j, j + 1)) {
+                    this.collection.swap(j, j + 1);
                 }
             }
         }

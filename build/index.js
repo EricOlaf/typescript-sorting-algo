@@ -1,4 +1,12 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var sorter_1 = require("./sorter");
+var numberscollection_1 = require("./numberscollection");
+var numColl = new numberscollection_1.NumbersCollection([10, 28, 3, -5, 0, -8]);
+var sorter = new sorter_1.Sorter(numColl);
+sorter.sort;
+console.log(numColl.data);
+console.log(numColl.length);
 //FOR NUMBERS ONLY
 // class Sorter { 
 //     constructor(public collection: number[]){}
