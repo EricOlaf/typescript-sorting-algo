@@ -4,6 +4,16 @@ var Sorter = /** @class */ (function () {
         this.collection = collection;
     }
     Sorter.prototype.sort = function () {
+        var length = this.collection.length;
+        for (var i = 0; i < length; i++) {
+            for (var j = 0; j < length - 1; j++) {
+                var left = this.collection[j];
+                var right = this.collection[j + 1];
+                if (left > right) {
+                    this.collection.splice(j, 2, right, left);
+                }
+            }
+        }
     };
     return Sorter;
 }());
