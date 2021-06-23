@@ -18,6 +18,7 @@ var Sorter = /** @class */ (function () {
     return Sorter;
 }());
 exports.Sorter = Sorter;
-var sorter = new Sorter([10, 3, -5, 0]);
-sorter.sort();
-console.log(sorter.collection);
+// const numColl = new NumbersCollection([10, 3, -5, 0]);
+// const sorter = new Sorter(numColl);
+// sorter.sort();
+// console.log('SORTED', sorter.collection);

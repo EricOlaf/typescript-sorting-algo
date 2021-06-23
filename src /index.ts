@@ -3,9 +3,15 @@ import {NumbersCollection} from './numberscollection';
 
 const numColl = new NumbersCollection([10, 28, 3, -5, 0, -8]);
 const sorter = new Sorter(numColl);
-sorter.sort;
+sorter.sort();
 console.log(numColl.data);
 console.log(numColl.length);
+console.log('sorted', sorter.collection);
+
+// const numColl = new NumbersCollection([10, 3, -5, 0]);
+// const sorter = new Sorter(numColl);
+// sorter.sort();
+// console.log('SORTED', sorter.collection);
 
 //FOR NUMBERS ONLY
 // class Sorter { 
