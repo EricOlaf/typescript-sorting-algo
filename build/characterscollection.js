@@ -14,9 +14,7 @@ var CharactersCollection = /** @class */ (function () {
         configurable: true
     });
     CharactersCollection.prototype.compare = function (leftIndex, rightIndex) {
-        console.log('left', this.data.toLowerCase()[leftIndex]);
-        console.log('right', this.data.toLowerCase()[rightIndex]);
-        return this.data.toLowerCase()[leftIndex] > this.data.toLowerCase()[rightIndex];
+        return this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase();
     };
     CharactersCollection.prototype.swap = function (leftIndex, rightIndex) {
         // const leftHand = this.data[leftIndex];

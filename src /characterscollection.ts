@@ -7,9 +7,7 @@ export class CharactersCollection {
     }
 
     compare(leftIndex: number, rightIndex: number): boolean {
-        console.log('left', this.data.toLowerCase()[leftIndex])
-        console.log('right', this.data.toLowerCase()[rightIndex])
-        return this.data.toLowerCase()[leftIndex] > this.data.toLowerCase()[rightIndex];
+        return this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase();
     }
     
     swap(leftIndex: number, rightIndex: number): void {
