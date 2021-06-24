@@ -1,20 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var sorter_1 = require("./sorter");
 var numberscollection_1 = require("./numberscollection");
-var characterscollection_1 = require("./characterscollection");
+//I added sorter as a parent to numbers collections but not the others.
+console.log('HERE');
 var numColl = new numberscollection_1.NumbersCollection([10, 28, 3, -5, 0, -8]);
-var sorter = new sorter_1.Sorter(numColl);
-sorter.sort();
 console.log(numColl.data);
 console.log(numColl.length);
-console.log('sorted', sorter.collection);
-var charColl = new characterscollection_1.CharactersCollection('EricOlaveson');
-var sorter2 = new sorter_1.Sorter(charColl);
-sorter2.sort();
-console.log(charColl.data);
-console.log(charColl.length);
-console.log('sorted CHARS', sorter2.collection);
+numColl.sort();
+console.log('sorted', numColl.data);
+// const numColl = new NumbersCollection([10, 28, 3, -5, 0, -8]);
+// const sorter = new Sorter(numColl);
+// sorter.sort();
+// console.log(numColl.data);
+// console.log(numColl.length);
+// console.log('sorted', sorter.collection);
+// const charColl = new CharactersCollection('EricOlaveson')
+// const sorter2 = new Sorter(charColl);
+// sorter2.sort();
+// console.log(charColl.data);
+// console.log(charColl.length);
+// console.log('sorted CHARS', sorter2.collection);
 // const numColl = new NumbersCollection([10, 3, -5, 0]);
 // const sorter = new Sorter(numColl);
 // sorter.sort();

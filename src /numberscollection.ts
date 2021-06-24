@@ -1,5 +1,9 @@
-export class NumbersCollection{
-    constructor(public data: number[]){}
+import { Sorter } from "./sorter";
+
+export class NumbersCollection extends Sorter{
+    constructor(public data: number[]){
+        super();
+    }
 
     //the get kw allows us to not have to call this with parens. rather just access it with name.length.
     get length(): number {
